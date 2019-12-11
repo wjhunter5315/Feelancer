@@ -1,13 +1,8 @@
-//NAV BAR ON-CLICK FUNCTIONS
 $(document).ready(function() {
     function getInfo () {
         $.get("/api/User", function(data) {
             let fullName = [];
-            let userId = data[0].id;
-            console.log(data);
-            console.log(data[0].firstName);
-            fullName = `${data[0].firstName} ${data[0].lastName} ID:${userId}`
-            console.log(fullName);
+            fullName = `${data[0].firstName} ${data[0].lastName}`
             let schoolName = data[0].school;
             let degreeGot = data[0].degree;
             let fieldDeg = data[0].field;
