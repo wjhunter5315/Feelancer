@@ -56,10 +56,13 @@ $("#continue-button-two").on("click", function () {
 });
 
 $("#create-profile-button").on("click", function () {
+
+
   User.title = $("#title-input").val();
   User.company = $("#company-input").val();
   User.description = $("#job-description-input").val();
   
+  console.log(User);
   $.ajax({
     method: "POST",
     url: "/api/User",
@@ -69,6 +72,7 @@ $("#create-profile-button").on("click", function () {
   });
   
 });
+
 $("#getStarted").on("click", function() {
   goSignup();
 });
