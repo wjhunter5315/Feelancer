@@ -1,2 +1,2 @@
-# Feelancer
-Profile and Invoice Generating APp
+# Freelance-Invoice
+Web app for creating invoices for freelancers
